@@ -1,70 +1,20 @@
 # An online escape game built with React and Firebase
+
 This is a project created by Remi Fernandez and Etienne Moureton for the Ecole Superieure du Digital (Bordeaux, France).
-The playable version is available here[http://homescape.diginight-esd-esp.com/#/](here)
+The playable version is available here : [http://homescape.diginight-esd-esp.com/#/].
 
-## Available Scripts
+## A 8-days building project
 
-In the project directory, you can run:
+We, the two developpers that worked on the project didn't know React before beginning to build the escape game. We spent 8 days learning and building it followinga hard specifications book. It uses a lot of technologies (React, Firebase, Vanilla JS...).
+The code is not clean at all, because we needed a working project, not a clean one. But in the incoming months, i'll release an updated version that will include responsive and cleaned code.
 
-### `npm start`
+### How to use it ? `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+If you want to run it locally, you will need to install dependecies with `npm i` and create a firebase.js config filewith your databse at the root of the src folder.
+Run `npm start` then open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### All contibutors 
 
-### `npm test`
+Main developpers : Rémi Fernandez and Etienne Moureton with the help of Thomas Mouchelet.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thanks to all the team that designed and imagined the project : Elodie Bardesson - Melody Barbier - Manon Becuwe - Nassime Bel haj - Elisa Bourg - Quentin Despessailles - Vincent Dulou - Candyce Faoro - Samuel Galinat - Salomé Germain - Marie Laffont - Luc Lafitte - Julie Michel - Maëlle Parlant - Elisa Reyne - Pauline Ruiz - Quentin Palliere - Stanislas Wiart.
