@@ -5,7 +5,7 @@ The playable version is available here : [http://homescape.diginight-esd-esp.com
 
 ## A 8-days building project
 
-We, the two developpers that worked on the project didn't know React before beginning to build the escape game. We spent 8 days learning and building it followinga hard specifications book. It uses a lot of technologies (React, Firebase, Vanilla JS...).
+We, the two developpers that worked on the project didn't know React before beginning to build the escape game. We spent 8 days learning and building it following a hard specifications book. It uses a lot of technologies (React, Firebase, Vanilla JS...).
 The code is not clean at all, because we needed a working project, not a clean one. But in the incoming months, i'll release an updated version that will include responsive and cleaned code.
 
 ### How to use it ? `npm start`
