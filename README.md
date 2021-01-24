@@ -10,7 +10,7 @@ The code is not clean at all, because we needed a working project, not a clean o
 
 ### How to use it ? `npm start`
 
-If you want to run it locally, you will need to install dependecies with `npm i` and create a firebase.js config filewith your databse at the root of the src folder.
+If you want to run it locally, you will need to install dependecies with `npm i` and create a firebase.js config file with your database at the root of the src folder.
 Run `npm start` then open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 #### All contibutors 
