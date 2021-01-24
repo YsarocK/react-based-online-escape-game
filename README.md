@@ -1,6 +1,6 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# An online escape game built with React and Firebase
+This is a project created by Remi Fernandez and Etienne Moureton for the Ecole Superieure du Digital (Bordeaux, France).
+The playable version is available here[http://homescape.diginight-esd-esp.com/#/](here)
 
 ## Available Scripts
 
