@@ -1,0 +1,272 @@
+.header-map{
+    display:flex;
+    width: 100%;
+    margin-bottom: 15px;
+    padding-top: 30px;
+}
+
+.footer-map{
+    display:flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+#player-map{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.room{
+    box-sizing: border-box;
+    background-color: red;
+    width: 45%;
+    margin: 10px;
+    height: 100px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+#player-map p{
+    width: 100%;
+}
+
+.current-pos{
+    background-color: blue;
+}
+
+.your-pos{
+    color: white;
+}
+
+#content-main{
+    position: relative;
+}
+
+#map{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 15px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+#map-container{
+    width: auto;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#content-main svg{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    position: absolute; /* postulat de départ */
+    top: 50%; left: 50%; /* à 50%/50% du parent référent */
+    transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+}
+
+#content-main svg g:hover{
+    stroke: white;
+}  
+#content-main svg g:hover text{
+    stroke: none;
+    display: none;
+}
+.svg-container{
+    transform: translateX(3000px);        
+}
+.svg-container text {
+    fill: #5a66a8;
+    z-index: -99;
+    text-transform: uppercase;
+}
+
+.svg-container:hover text{
+    display:block;
+}
+
+.svg-container.unstage-active{
+    animation: unactive-map 0.7s forwards ease-in-out;
+}   
+
+.svg-container.stage-active{
+    animation: active-map 0.7s forwards ease-in-out;
+    z-index: 99;
+}   
+
+@keyframes active-map{
+    0%{
+        transform: translateX(3000px);
+    }
+
+    100%{
+        transform: translateX(-50%, -50%);
+    }
+}
+
+@keyframes unactive-map{
+    0%{
+        transform: translateX(-50%, -50%);
+    }
+
+    100%{
+        transform: translateX(3000px);
+    }
+}
+
+
+.cls-1{fill:#070e34;}.cls-2{fill:#35407B;}.cls-3{fill:none;stroke:#35407B;stroke-miterlimit:10;}
+.st0{fill:#070E34;}.st1{fill:#35407B;}.st2{fill:none;stroke:#35407B;stroke-width:0.8945;stroke-miterlimit:10;}
+#Calque-2{
+    enable-background:new 0 0 278.5 239.1;
+}
+g{
+    pointer-events: visibleFill;
+    cursor: pointer;
+}
+
+#map p{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#map p span{
+    color: white
+}
+
+#player-position{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#player-position li{
+    list-style-type: none;
+    color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+.player-color-pin{
+    width: 15px;
+    height: 15px;
+    border-radius: 30px;
+    background-color: blue;
+    margin-right: 5px;
+}
+
+.player-color-pin1{
+    background-color: #F877F3;
+}
+
+.player-color-pin2{
+    background-color: #8133FF;
+}
+
+.player-color-pin3{
+    background-color: #FDB872;
+}
+
+.player-color-pin4{
+    background-color: #7BDC6B;
+}
+
+/* Players pin*/
+.p-room-container {
+    overflow: visible;
+}
+.p-pin{
+    width: 5px;
+    height: 5px;
+    y: 10;
+    x: 10;
+    rx: 20;
+    ry: 20;
+}
+.p-pin .active{
+    display:block;
+}
+
+/* Players pin*/
+.p-room-container {
+    overflow: visible;
+}
+.p-pin{
+    fill: none;
+    width: 5px;
+    height: 5px;
+    y: 10;
+    x: 10;
+    rx: 20;
+    ry: 20;
+}
+.p-pin .active{
+    display:block;
+}
+.p-pin .unactive{
+    display:none;
+}
+/* Color player X*/
+.p-pin.p1{
+    fill: #F877F3;
+}
+.p-pin.p2{
+    fill: #8133FF;
+}
+.p-pin.p3{
+    fill: #FDB872;
+}
+.p-pin.p4{
+    fill: #7BDC6B;
+}
+/* Display player on X*/
+.p-d-x .p-pin:nth-child(2){
+    x:20;
+}
+.p-d-x .p-pin:nth-child(3){
+    x:30;
+}
+.p-d-x .p-pin:nth-child(4){
+    x:40;
+}
+
+/* Display play on Y*/
+.p-d-y .p-pin:nth-child(2){
+    y:20;
+}
+.p-d-y .p-pin:nth-child(3){
+    y:30;
+}
+.p-d-y .p-pin:nth-child(4){
+    y:40;
+}
+
+#map button{
+    background: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #FF7583;
+    color: white;
+    margin: 0px 20px;
+    transition: all 0.1s ease-in-out;
+    width: 100%;
+    max-width: 160px;
+}
+
+#map button:hover{
+    background-color: #35407B;
+}

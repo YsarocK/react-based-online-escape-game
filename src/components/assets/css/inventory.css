@@ -1,0 +1,146 @@
+#inventory{
+    background-color: #253171;
+    height: 60%;
+    width: auto;
+    width: 100%;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+#inventory-object-container::-webkit-scrollbar{
+    width: 0 !important;
+}
+
+#inventory-object-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    max-height: 90%;
+    overflow: scroll;
+}
+.inventory-object-content{
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.inventory-object{
+    width:100%;
+    padding-bottom: 15px;
+}
+
+.inventory-info{
+    width: 100%;
+    border-radius: 5px;
+    background-color: #181F49;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transform: translateX(100%);
+    animation: card-in 0.3s forwards ease-in-out;
+    transition: all 1s;
+}
+
+.inventory-object-content.empty .inventory-info{
+    background: #434F9A;
+    height: 100%;
+}
+
+.inventory-object-content.empty .inventory-info{
+    justify-content: flex-end;
+    min-height: 200px;
+}
+.inventory-object-content.empty .inventory-info p.empty-text{
+    font-size: 0.9em;
+    font-weight:300;
+    font-style: italic;
+}
+
+.inventory-object-content:nth-child(2n+1) .inventory-object{
+    padding-right:7.5px;
+}
+
+.inventory-object-content:nth-child(2n) .inventory-object{
+    padding-left:7.5px;
+}
+
+.inventory-object img{
+    width: 60%;
+    border-radius: 5px;
+    margin: 0px 0 10px;
+}
+
+.inventory-object p{
+    margin: 5px 0px 20px 0px;
+    color: white;   
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1em;
+}
+
+.delete-inventory-element{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    left: 10px;
+    top: 10px;
+    position: absolute;
+    cursor: pointer;
+}
+
+
+
+@keyframes card-in {
+    100% {
+        transform: translateX(0);
+    }
+}
+.card-subtitle{
+    color: #9EA8ED;
+    font-size: 0.8em;
+    font-weight: 500;
+    margin-bottom:5px;
+}
+
+.card-title{
+    text-transform: initial;
+    font-size: 1.2em;
+    margin-bottom:10px;
+}
+.button-container{
+    width: 100%;
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+
+.button-container .btn{
+    margin: 10px 15px 0 0;
+}
+.button-container .btn svg{
+    width: 30px;
+    height: 100%;
+    fill: #9EA8ED;
+}
+
+.button-container .btn svg:hover{
+    cursor: pointer;
+    fill: #FF7583;
+}
+
+/* @media (max-width: 1500px) {
+
+.inventory-object-content{
+    width:100%;
+}
+.inventory-object-content {
+
+
+}
+
+
+} */

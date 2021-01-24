@@ -1,0 +1,493 @@
+#content{
+    width: 100%;
+    /* max-width: 1400px; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background: url('https://etiennemoureton.fr/digital-event/bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+button{
+    outline: none;
+}
+
+.hide-gladys{
+    transform: translateX(4000px);
+}
+
+
+#gladys{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #253171;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+#closeGladys{
+    width: 100%;
+    position: absolute;
+    max-width: 300px;
+    bottom: 120px;
+}
+#gladys img {
+    max-width: 1400px;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#gladys button{
+    z-index: 10000;
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: none;
+    padding: 17px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #FF7583 !important;
+    color: white;
+    margin: 0px 20px;
+    text-transform: uppercase;
+}
+
+.content-overflow{
+    overflow: hidden;
+}
+
+#content-objects-task{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    /* visibility: hidden;     */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 30px 0px 30px 30px;
+    padding-bottom:30px;
+    box-sizing: border-box;
+}
+
+#task{
+    margin-top: 15px;
+    height: 40%;
+    width: 100%;
+    background-color: #253171;
+    position: relative;
+}
+
+#room-name{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    color: white;
+    text-transform: capitalize;
+}
+.game-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-content{
+    height: 100%;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+}
+.game-room{
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.map-container{
+    width: 100%;
+    height: 100%;
+    padding-right: 30px;
+}
+#content-main{
+    height: 100%;
+    width: 100%;
+    transform: translateY(800px);
+    opacity: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    /* flex-direction: column; */
+    animation: slide-in 0.6s ease-in-out forwards;
+    transform: translateX(400px);
+}
+.content-room-container{
+    height: 100%;
+}
+.content-room-content{
+    height: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.content-room-block{
+    padding-top: 30px;
+    height: 100%;
+}
+#content-room-object{
+    min-width: 300px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: #253171;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.room-object{
+    margin: 10px 0px;
+    overflow: hidden;
+    background-color: #181F49;
+    border-radius: 5px;
+    padding: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.room-object:hover{
+    background-color: #FF7583;
+}
+
+.objectSelected{
+    background-color: #4454B2;
+}
+
+.objectSelected:hover{
+    background-color: #FF7583 !important;
+}
+
+.object-room-img{
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+
+.room-object-data{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transform: translateX(100%);
+    animation: card-in 0.3s forwards ease-in-out;
+    transition: all 1s;
+    padding: 0;
+}
+#room-object-container::-webkit-scrollbar{
+    width: 0 !important;
+    height: 0;
+}
+
+#room-object-container{
+    height: 100%;
+    overflow: scroll;
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+.room-object-scroll{
+    position: absolute;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+.object-room-infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.object-room-infos p {
+    margin: 0;
+    padding: 0;
+}
+
+.object-room-name{
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+.object-room-description{
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.5)
+}
+
+.room-object button {
+    width: 100%;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    margin-top: 10px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    transition: all 0.1s ease-in-out;
+}
+
+.room-object button:hover{
+    background-color: white;
+    color: black;
+}
+
+#interact{
+    width: 100%;
+    background-color: #253171;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#interact #interact-active p {
+    color: rgba(255, 255, 255, 0.5)
+}
+
+#interact>div:nth-child(2){
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+#interact button{
+    background: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #FF7583 !important;
+    color: white;
+    margin: 0px 20px;
+}
+
+.interact-message{
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0px 10px; 
+    padding: 0%;
+}
+
+@keyframes card-in {
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in {
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#room-object-container::-webkit-scrollbar{
+    width: 0 !important
+}
+#room-object-container{
+    height: 100%;
+    max-height: 90%;
+    overflow: scroll;
+}
+
+#quest::-webkit-scrollbar{
+    width: 0 !important
+}
+
+#quest{
+    overflow: scroll;
+    height: 100%;
+    max-height: 90%;
+    color: white;
+    font-weight: light;
+}
+
+.quest{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    background-color: #181F49;
+    margin: 10px 0px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.quest>p{
+    width: 100%;
+}
+
+.quest p{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quest-description{
+    opacity: 0.7;
+    font-size: 0.7em;
+}
+
+.quest svg{
+    opacity: 0.6;
+}
+.task-header{
+    display: flex;
+}
+.task-title{
+    width: 100%;
+}
+.task-timer{
+    text-align: center;
+    width: 100%;
+    color: white;
+    background: #B33A3A;
+    border-radius: 5px;
+    display:none;
+    justify-content: center;
+    margin-top: -8px;
+    margin-bottom: 8px;
+    flex-direction: column;
+}
+.task-timer p {
+    margin: 0;
+}
+#timer-display.isActive{
+    display: flex;
+}
+.bureauLocked .cls-1{
+    fill: #B33A3A !important;
+}
+.bureauLocked text{
+    fill: white !important;
+}
+#tiroir{
+    width: 500px;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+#tiroir-container{
+    width: 100%;
+    height: 100%;
+    background: url("https://etiennemoureton.fr/digital-event/tiroir.jpg");
+    background-size: contain;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    transition: all 0.3s;
+    animation: box-in 0.3s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+#tiroir-couvercle{
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+    position: absolute;
+    top: 0;
+    height: 0;
+    border-radius: 5px;
+    transition: all 0.3s;
+    animation: couvercle-in 0.3s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+#tiroir .inventory-object-content{
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tiroir .inventory-object{
+    margin: 0px 20px;
+    padding: 0;
+}
+
+.tiroir-object{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+#tiroir-couvercle{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.tableau-pace{
+    height: 100%;
+}
+
+.tiroir-object button{
+    padding: 10px;
+    margin: 0px 0px 30px 0px;
+    border: none;
+    border-radius: 10px;
+}
+
+.tiroir-object button:hover{
+    background-color: #FF7583;
+}
+
+@keyframes couvercle-in{
+    0%{
+        transform: translateY(0px);
+    }
+
+    100%{
+        transform: translateY(-150px);
+    }
+}
+
+@keyframes box-in{
+    0%{
+        transform: translateY(0px);
+    }
+
+    100%{
+        transform: translateY(150px);
+    }
+}

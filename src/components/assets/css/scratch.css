@@ -1,0 +1,25 @@
+#bridge {
+    display: block;
+    margin: 0 auto;
+    background-image: url('https://etiennemoureton.fr/digital-event/hublot-map.jpg');
+    background-size: cover;
+    width: 100%;
+    max-width: 750px;
+    height: 100%;
+    cursor:  crosshair;
+    cursor: url(https://etiennemoureton.fr/digital-event/cursor.png) 53 53, crosshair;
+}
+#bridgeContainer { 
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-family: Avenir, sans-serif;
+}
+#bridgeContainer figcaption {   
+    margin-top: 2rem; 
+}
+
+.noscratch{
+    pointer-events: none;
+}

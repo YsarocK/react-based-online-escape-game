@@ -1,0 +1,130 @@
+#room-form-container{
+   width: 100%;
+   height: 100%;
+   max-width:1500px;
+    display: flex;
+    align-items: center;
+}
+
+#room-form-container>div{
+}
+.left-column{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-home {
+    max-width: 500px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form, form{
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.join-room, form button{
+    box-sizing: border-box;
+    margin: 20px 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+}
+
+.join-room{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.join-room input[type="text"]{
+    padding: 0px 15px;
+    color: white;
+    outline: #00C2FF;
+    border: 1px solid #FF7583;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 25px;
+}
+.join-room input[type="text"]::placeholder {
+    color: white;
+    opacity: 0.5;
+    font-weight: 100;
+  }
+.join-room input[type="submit"]{
+    border-radius: 5px;
+    background: transparent;
+    border: 2px solid #FF7583;
+    background: #FF7583;
+    height: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+form input[type="submit"], button{
+    cursor: pointer;
+}
+
+form button{
+    background: transparent;
+    border: 2px solid #FF7583;
+    color: #FF7583;
+    height: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.1s;
+}
+
+form button:hover{
+    background-color: #FF7583;
+    color: white;
+}
+
+
+.room-form-container-infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.room-form-container-infos .logo{
+    font-size: 3em;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.1em;
+}
+
+.room-form-container-infos p{
+    color: white;
+    text-align: center;
+    font-size:1.5em;
+}
+
+#room-form-container hr {
+    border: 1px solid white;
+    width: 100%;
+    opacity: 0.1;
+}

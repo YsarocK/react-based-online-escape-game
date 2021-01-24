@@ -1,0 +1,397 @@
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../../../fonts/CircularStd-MediumItalic.ttf');
+  src: local('../../../fonts/Circular Std Medium Italic'), local('CircularStd-MediumItalic'),
+      url('../../../fonts/CircularStd-MediumItalic.eot') format('embedded-opentype'),
+      url('../../../fonts/CircularStd-MediumItalic.woff2') format('woff2'),
+      url('../../../fonts/CircularStd-MediumItalic.woff') format('woff'),
+      url('../../../fonts/CircularStd-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../../../fonts/CircularStd-Black.eot');
+  src: local('Circular Std Black'), local('CircularStd-Black'),
+      url('../../../fonts/CircularStd-Black.eot') format('embedded-opentype'),
+      url('../../../fonts/CircularStd-Black.woff2') format('woff2'),
+      url('../../../fonts/CircularStd-Black.woff') format('woff'),
+      url('../../../fonts/CircularStd-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../../../fonts/CircularStd-Medium.eot');
+  src: local('Circular Std Medium'), local('CircularStd-Medium'),
+      url('../../../fonts/CircularStd-Medium.eot') format('embedded-opentype'),
+      url('../../../fonts/CircularStd-Medium.woff2') format('woff2'),
+      url('../../../fonts/CircularStd-Medium.woff') format('woff'),
+      url('../../../fonts/CircularStd-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../../../fonts/CircularStd-Bold.eot');
+  src: local('Circular Std Bold'), local('CircularStd-Bold'),
+      url('../../../fonts/CircularStd-Bold.eot') format('embedded-opentype'),
+      url('../../../fonts/CircularStd-Bold.woff2') format('woff2'),
+      url('../../../fonts/CircularStd-Bold.woff') format('woff'),
+      url('../../../fonts/CircularStd-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../../../fonts/CircularStd-BlackItalic.eot');
+  src: local('Circular Std Black Italic'), local('CircularStd-BlackItalic'),
+      url('../../../fonts/CircularStd-BlackItalic.eot') format('embedded-opentype'),
+      url('../../../fonts/CircularStd-BlackItalic.woff2') format('woff2'),
+      url('../../../fonts/CircularStd-BlackItalic.woff') format('woff'),
+      url('../../../fonts/CircularStd-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Circular Std Book';
+  src: url('../../../fonts/CircularStd-BookItalic.eot');
+  src: local('Circular Std Book Italic'), local('CircularStd-BookItalic'),
+      url('../../../fonts/CircularStd-BookItalic.eot') format('embedded-opentype'),
+      url('../../../fonts/CircularStd-BookItalic.woff2') format('woff2'),
+      url('../../../fonts/CircularStd-BookItalic.woff') format('woff'),
+      url('../../../fonts/CircularStd-BookItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../../../fonts/CircularStd-BoldItalic.eot');
+  src: local('Circular Std Bold Italic'), local('CircularStd-BoldItalic'),
+      url('../../../fonts/CircularStd-BoldItalic.eot') format('embedded-opentype'),
+      url('../../../fonts/CircularStd-BoldItalic.woff2') format('woff2'),
+      url('../../../fonts/CircularStd-BoldItalic.woff') format('woff'),
+      url('../../../fonts/CircularStd-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circular Std Book';
+  src: url('../../../fonts/CircularStd-Book.eot');
+  src: local('Circular Std Book'), local('CircularStd-Book'),
+      url('../../../fonts/CircularStd-Book.eot') format('embedded-opentype'),
+      url('../../../fonts/CircularStd-Book.woff2') format('woff2'),
+      url('../../../fonts/CircularStd-Book.woff') format('woff'),
+      url('../../../fonts/CircularStd-Book.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Circular Std';
+}
+#root{
+    font-family: 'Circular Std';
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#root-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pitch{
+  display:none;
+}
+
+.pitch, .room-manager{
+  width: 50%;
+  max-width: 500px;
+}
+
+.pitch p{
+  width: 100%;
+  max-width: 400px;
+  color: white;
+  text-align: justify;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+html{
+  height: 100%;
+}
+
+body{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: url('https://etiennemoureton.fr/digital-event/background-home.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+.content{
+  height:100%;
+}
+ #loader{
+  background-color: #070E34;
+  width: 100%;
+  height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   transition: all 0.7s ease-in-out;
+ }
+
+ .waiting-message{
+   color: white !important;
+   font-size: 2em;
+ }
+
+ .room-id{
+   color: rgba(255, 255, 255, 0.5);
+   font-size: 1.1em;
+ }
+
+ .room-id span{
+   color: white
+ }
+
+ .loader-text{
+   color: white;
+   font-size: 2em;
+   margin: 0;
+ }
+
+ .lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: #fff;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  .lds-facebook div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+  }
+  .lds-facebook div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+  }
+  .lds-facebook div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: 8px;
+      height: 64px;
+    }
+    50%, 100% {
+      top: 24px;
+      height: 32px;
+    }
+  }
+
+  .card{
+    padding: 20px;
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 5px;
+  }
+
+  .card-subtitle{
+    margin: 0;
+    padding: 0;
+    font-size: 0.6em;
+    color: #838A90;
+    text-transform: uppercase;
+  }
+
+  .card-title{
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  #search-container {
+    width: 3508px;
+    height: 2485px;
+    position: absolute;
+    background: url(https://etiennemoureton.fr/digital-event/garage/g-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+  }
+  
+  /* LIGHTS */
+  /* Flashlight Overlay */
+  #search-container {
+    cursor: none;
+    --cursorX: 50vw;
+    --cursorY: 50vh;
+  }
+
+  .close-garage-hide{
+    display: none;
+}
+
+#interact{
+  position: relative;
+}
+
+.paper-quest-container{
+  width: 300px;
+  position: absolute;
+  right: 30px;
+}
+
+.paper-quest-container p{
+  margin: 0;
+  color: white
+}
+
+.paper-quest-container p span{
+  font-size: 1.5em;
+  color: #FF7583;
+}
+
+.join-disabled{
+  pointer-events: none;
+  background-color: #838A90 !important;
+}
+
+.join-disabled-home{
+  pointer-events: none;
+  background-color: #838A90 !important;
+  border: none !important;
+}
+
+#intro-container{
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #1F295F;
+  display: flex;
+  justify-content: flex-start;
+  color: white
+}
+
+#intro-container>div{
+  padding: 80px;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: url('https://etiennemoureton.fr/digital-event/homescape-shape.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+}
+
+#intro-container p{
+  width: 100%;
+  max-width: 500px;
+  line-height: 2em;
+}
+
+#intro-container span{
+  color: #FF7583
+}
+#intro-container .text-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+#intro-container button{
+  background: #181F49;
+  font-size: 1.2em;
+  color: white;
+  min-width: 140px;
+  transition:0.2s;
+  border: 0;
+}
+#intro-container button:hover{
+  background: #FF7583;
+  font-size: 1.2em;
+  color: white;
+  min-width: 140px;
+
+}
+
+#end-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: #1F295F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#end-container img{
+  width: 100%;
+  max-width: 1200px;
+  object-fit: contain;
+}
+
+#credits{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.5)
+}
+
+#credits p:nth-child(1){
+  font-size: 0.8em;
+}
+
+#credits p:nth-child(2) {
+  font-size: 0.5em;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}

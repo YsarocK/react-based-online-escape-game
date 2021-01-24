@@ -1,0 +1,71 @@
+.paper-container {
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+}
+
+.paper-container img {
+    margin-left: 5px;
+}
+
+.movingImg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 100%;
+    max-width: 200px; */
+}
+
+#img-1{
+    max-width: 122.50px;
+    max-height: 82.50px;
+}
+
+#img-2{
+    max-width: 136.50px;
+    max-height: 117.50px;
+}
+
+#img-3{
+    max-width: 222.50px;
+    max-height: 110.50px;
+}
+
+#img-4{
+    max-width: 199.50px;
+    max-height: 103px;
+}
+
+#img-5{
+    max-width: 169.50px;
+    max-height: 176.50px;
+}
+
+#img-6{
+    max-width: 169px;
+    max-height: 138px;
+}
+
+#img-7{
+    max-width: 154px;
+}
+
+#img-8{
+    max-width: 160px;
+}
+
+#img-9{
+    max-width: 200px;
+}
+#img-10{
+    max-width: 160px;
+}
+
+#img-11{
+    max-width: 197.50px;
+}
+
+#img-12{
+    max-width: 200.50px;
+}

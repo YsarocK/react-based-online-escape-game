@@ -1,0 +1,130 @@
+.cursor-changer, .cursor-reader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.cursor-changer ul, .cursor-reader ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 0;;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* CURSOR ITSELF */
+
+.cursor-container{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 5px;
+  }
+.cursor{
+    cursor: pointer;
+    width: 90px;
+    height: 90px;
+    background: url('https://etiennemoureton.fr/digital-event/potar.png'); 
+    background-size: contain;   
+    border-radius: 50px;
+    transform-origin: 50% 50%;
+    transform: rotate(0)
+}
+
+.cursor-reader-light{
+    border-radius: 150px;
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white
+}
+
+.cursor-container:nth-child(1){
+    background: url('https://etiennemoureton.fr/digital-event/cursor-1.png');
+    background-size: contain;   
+}
+
+.cursor-container:nth-child(2){
+    background: url('https://etiennemoureton.fr/digital-event/cursor-2.png');
+    background-size: contain;   
+}
+
+.cursor-container:nth-child(3){
+    background: url('https://etiennemoureton.fr/digital-event/cursor-3.png');
+    background-size: contain;   
+}
+
+.cursor-container:nth-child(4){
+    background: url('https://etiennemoureton.fr/digital-event/cursor-4.png');
+    background-size: contain;   
+}
+
+.cursor-container:nth-child(5){
+    background: url('https://etiennemoureton.fr/digital-event/cursor-5.png');
+    background-size: contain;   
+}
+
+#boitier-elec{
+    border-radius: 10px;
+    border: 3px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    background-color: lightgray;
+    position: relative;
+}
+
+#boitier-elec-couvercle{
+    border-radius: 10px;
+    border: 3px solid gray;
+    background-color: lightgray;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    animation: couvercle-out 0.7s forwards;
+    animation-delay: 1s;
+    transition: all 1s ease-in-out;
+}
+
+.cursor-disabled{
+    pointer-events: none;
+}
+
+.cursor-disabled:after{
+    content: "";
+    position: absolute;
+    background: url('https://etiennemoureton.fr/digital-event/cursor-disabled.jpg');
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    border-radius: 5px;
+}
+
+@keyframes couvercle-out{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(1000px);
+    }
+}
+
+.cursor-reader-light img {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+}
